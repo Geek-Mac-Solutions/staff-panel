@@ -96,13 +96,6 @@ Route::get('/birthday-list', [NoticeBoardController::class, 'birthdayList'])->na
 Route::get('/home', [AuthController::class, 'homeView'])->name('web.home');
 Route::get('/login', [AuthController::class, 'loginView'])->name('web.login');
 Route::get('/forgot_password', [AuthController::class, 'forgotPassword'])->name('web.forgot_password');
-Route::get('/register', [AuthController::class, 'registerView'])->name('web.register');
-Route::get('/register-step1', [AuthController::class, 'registerStep1'])->name('web.register.step1');
-Route::get('/register-step2', [AuthController::class, 'registerStep2'])->name('web.register.step2');
-Route::get('/register-step3', [AuthController::class, 'registerStep3'])->name('web.register.step3');
-Route::get('/register-step4', [AuthController::class, 'registerStep4'])->name('web.register.step4');
-Route::get('/register-step5', [AuthController::class, 'registerStep5'])->name('web.register.step5');
-
 
 
 
@@ -170,6 +163,26 @@ Route::get('/view-analytics', [ItemShopController::class, 'viewAnalytics'])->nam
 
 
 
+// STUDENT TALENTS
+Route::get('/student-talents', [StudentTalentController::class, 'studentTalent'])->name('web.student.talents');
+Route::get('/student-details', [StudentTalentController::class, 'studentDetails'])->name('web.student.details');
+Route::get('/inactive-accounts', [StudentTalentController::class, 'inactiveAccounts'])->name('web.inactive.accounts');
+Route::get('/non-paid-accounts', [StudentTalentController::class, 'nonPaidAccounts'])->name('web.non_paid.accounts');
+Route::get('/scholarship-details', [StudentTalentController::class, 'scholarshipDetails'])->name('web.scholarship.details');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Class Tutes And Books
@@ -190,18 +203,6 @@ Route::get('/class-paper-view', [ClassPaperController::class, 'classPaperMonthly
 Route::get('/class-paper-open', [ClassPaperController::class, 'classPaperView'])->name('web.paper.open');
 
 
-// STUDENT TALENTS
-Route::get('/student-talents', [StudentTalentController::class, 'studentTalent'])->name('web.student.talents');
-Route::get('/online-exam-result', [StudentTalentController::class, 'onlineExamResult'])->name('web.online.exam_result');
-Route::get('/paper-answer', [StudentTalentController::class, 'paperAnswer'])->name('web.paper.answer');
-Route::get('/student-certificates', [StudentTalentController::class, 'studentCertificate'])->name('web.student.certificates');
-Route::get('/talent-videos', [StudentTalentController::class, 'talentVideos'])->name('web.talent.videos');
-Route::get('/talent-videos-view', [StudentTalentController::class, 'talentVideosView'])->name('web.talent.videosView');
-Route::get('/talent-videos-lesson', [StudentTalentController::class, 'talentVideosLesson'])->name('web.talent.videosLesson');
-Route::get('/my-talent-videos', [StudentTalentController::class, 'myTalentVideos'])->name('web.my_talent');
-Route::get('/other-talent-videos', [StudentTalentController::class, 'otherTalentVideos'])->name('web.other_talent');
-Route::get('/review-teacher', [StudentTalentController::class, 'reviweTeacher'])->name('web.review.teacher');
-Route::get('/term-test', [StudentTalentController::class, 'termTest'])->name('web.term.test');
 
 
 

@@ -37,9 +37,7 @@
                    <h3 class="font-20 fw-bold text-purple pb-1">PRAMOD THILINA</h3>
                    <h3 class="font-17 fw-bold text-purple pb-1">EMP 0002
                 </h3>
-                   <a href="http://localhost:8000/class/view" class="hvr-shrink text-white gradient-background-1 py-2 px-5 justify-content-around rounded-35" data-bs-toggle="modal" data-bs-target="#editProfile">
-                   Edit Profile
-                   </a>
+                 
                 </div>
              </div>
           </div>
