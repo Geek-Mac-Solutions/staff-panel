@@ -19,6 +19,8 @@ $(document).ready( function () {
     $('#disOrderTbl').DataTable();
     $('#pendingDisOrder').DataTable();
     $('#addItems').DataTable();
+    $('#studentDetailsTable').DataTable();
+    $('#inactiveStudents').DataTable();
 
 });
 

@@ -19,11 +19,12 @@ class StudentTalentController extends Controller
             return;
         }
     }
-    public function onlineExamResult()
+
+    public function studentDetails()
     {
         try{
 
-            return view('web.student_talents.online_exam_result');
+            return view('web.student_talents.details');
 
         }catch(\Exception $exception){
 
@@ -31,60 +32,11 @@ class StudentTalentController extends Controller
         }
     }
 
-    public function paperAnswer()
+    public function inactiveAccounts()
     {
         try{
 
-            return view('web.student_talents.paper_answer');
-
-        }catch(\Exception $exception){
-
-            return;
-        }
-    }
-
-
-    public function studentCertificate()
-    {
-        try{
-
-            return view('web.student_talents.student_certificate');
-
-        }catch(\Exception $exception){
-
-            return;
-        }
-    }
-    public function talentVideos()
-    {
-        try{
-
-            return view('web.student_talents.talent-videos');
-
-        }catch(\Exception $exception){
-
-            return;
-        }
-    }
-
-
-    public function talentVideosView()
-    {
-        try{
-
-            return view('web.student_talents.talent_videos_view');
-
-        }catch(\Exception $exception){
-
-            return;
-        }
-    }
-
-    public function talentVideosLesson()
-    {
-        try{
-
-            return view('web.student_talents.talent_videos_lesson');
+            return view('web.student_talents.inactive_account');
 
         }catch(\Exception $exception){
 
@@ -94,12 +46,11 @@ class StudentTalentController extends Controller
 
 
 
-
-  public function myTalentVideos()
+    public function nonPaidAccounts()
     {
         try{
 
-            return view('web.student_talents.my_talent_videos');
+            return view('web.student_talents.non_paid_account');
 
         }catch(\Exception $exception){
 
@@ -107,57 +58,17 @@ class StudentTalentController extends Controller
         }
     }
 
-
-
-
-
-    public function otherTalentVideos()
+    public function scholarshipDetails()
     {
         try{
 
-            return view('web.student_talents.other_talent_videos');
+            return view('web.student_talents.scholarship');
 
         }catch(\Exception $exception){
 
             return;
         }
     }
-
-
-    public function reviweTeacher()
-    {
-        try{
-
-            return view('web.student_talents.reviwe_teacher');
-
-        }catch(\Exception $exception){
-
-            return;
-        }
-    }
-
-
-    public function termTest()
-    {
-        try{
-
-            return view('web.student_talents.term_test');
-
-        }catch(\Exception $exception){
-
-            return;
-        }
-    }
-
-
-
-
-
-
-
-
-
-
 
 
 
