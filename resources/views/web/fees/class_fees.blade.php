@@ -42,7 +42,7 @@
                 </span>
             </div>
             <div class="col-lg-8 pt-lg-0 pt-sm-3 pt-3">
-              
+
                <div class="row py-4">
                   <div class="col-lg-8 col-sm-8 mx-auto">
                      <div class="card p-3">
@@ -60,7 +60,7 @@
                               <p class="font-14 fw-bolder text-dark ">077 287 9970 </p>
                            </div>
                            <div class="col-6 mx-auto pt-3 text-center">
-                              <a href=" " class=" w-100 text-uppercase font-14 text-white
+                              <a href="{{ route('web.student.details') }}" class=" w-100 text-uppercase font-14 text-white
                                  rounded-pill py-2 px-3 bg-primary fw-500 align-items-center   hvr-shrink">STUDENT DETAILS
                               </a>
                            </div>
@@ -186,7 +186,7 @@
                               </div>
                            </div>
                         </div>
-                       
+
                         <div class="col-lg-3 col-sm-4 col-6">
                            <button class="btn btn-success fw-500 font-11 px-2 w-100 rounded-pill text-white"
                               data-bs-toggle="modal" data-bs-target="#classPay">PAY</button>
@@ -229,7 +229,7 @@
          <div class="row justify-content-center pt-5">
             <div class="col-lg-8">
                <p class="font-14 fw-bolder text-purple text-center">
-                  EDITORS NOTE; NEWEST PENDING PAYMENTS MUST COME TO THE TOP            
+                  EDITORS NOTE; NEWEST PENDING PAYMENTS MUST COME TO THE TOP
                </p>
             </div>
          </div>

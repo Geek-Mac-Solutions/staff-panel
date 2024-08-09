@@ -169,7 +169,10 @@ Route::get('/student-details', [StudentTalentController::class, 'studentDetails'
 Route::get('/inactive-accounts', [StudentTalentController::class, 'inactiveAccounts'])->name('web.inactive.accounts');
 Route::get('/non-paid-accounts', [StudentTalentController::class, 'nonPaidAccounts'])->name('web.non_paid.accounts');
 Route::get('/scholarship-details', [StudentTalentController::class, 'scholarshipDetails'])->name('web.scholarship.details');
+Route::get('/add-scholarship', [StudentTalentController::class, 'scholarshipAdd'])->name('web.scholarship.add');
 
+Route::get('/rec-access', [StudentTalentController::class, 'recAccess'])->name('web.rec.access');
+Route::get('/add-rec-access', [StudentTalentController::class, 'AddRecAccess'])->name('web.rec.add_rec');
 
 
 

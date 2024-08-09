@@ -16,7 +16,7 @@ use Carbon\Carbon;
          </h1>
       </div>
       <div class="col-lg-3 col-sm-3 pt-lg-0 pt-3 justify-content-end">
-         <a class=href="{{ route('web.student.details') }}" data-bs-toggle="modal" data-bs-target="#englishMedium">
+         <a   data-bs-toggle="modal" data-bs-target="#englishMedium">
             <ul class="d-flex justify-content-center font-14 text-white
                my-1 py-2 px-3 bg-dark fw-500 align-items-center  rounded-pill">
                <li><i class="fa fa-eye"></i></li>
@@ -140,7 +140,7 @@ use Carbon\Carbon;
          </div>
 
 
-         <a class=href="{{ route('web.student.details') }}" data-bs-toggle="modal" data-bs-target="#sinhalaMedium">
+         <a   data-bs-toggle="modal" data-bs-target="#sinhalaMedium">
             <ul class="d-flex justify-content-center font-14 text-white
                my-1 py-2 px-3 bg-warning fw-500 align-items-center  rounded-pill">
                <li><i class="fa fa-eye"></i></li>
@@ -343,12 +343,41 @@ use Carbon\Carbon;
          </div>
 
 
+         <div  class="col-lg-3 col-sm-4 mb-3 align-items-center">
+            <div class="border-new pt-3 pb-5 px-3 mx-lg-0 mx-sm-0 mx-3  rounded-35 bg-white text-center">
+               <p
+                  class="font-17 text-uppercase fw-bold py-3 rounded-35   "> Other Grades and Subjects
+                    Students
+                    
+               </p>
+
+            </div>
+         </div>
 
 
 
 
+         <div  class="col-lg-3 col-sm-4 mb-3 align-items-center">
+            <div class="border-new pt-3 pb-5 px-3 mx-lg-0 mx-sm-0 mx-3  rounded-35 bg-white text-center">
+               <p
+                  class="font-17 text-uppercase fw-bold py-3 rounded-35   ">
+                  <a href="{{ route('web.rec.access') }}" class="text-purple  hvr-shrink">RECORDING ACCESS
 
+                    </a>
+               </p>
 
+            </div>
+         </div>
+
+         <div  class="col-lg-3 col-sm-4 mb-3 align-items-center">
+            <div class="border-new pt-3 pb-5 px-3 mx-lg-0 mx-sm-0 mx-3  rounded-35 bg-white text-center">
+               <p
+                  class="font-17 text-uppercase fw-bold py-3 rounded-35   "> ALL ACCOUNTS
+                 
+               </p>
+
+            </div>
+         </div>
 
 
 

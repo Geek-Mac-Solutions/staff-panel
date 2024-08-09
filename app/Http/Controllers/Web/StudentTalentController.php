@@ -71,6 +71,47 @@ class StudentTalentController extends Controller
     }
 
 
+    public function scholarshipAdd()
+    {
+        try{
+
+            return view('web.student_talents.add_scholarship');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+    public function recAccess()
+    {
+        try{
+
+            return view('web.student_talents.rec_access');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+    public function AddRecAccess()
+    {
+        try{
+
+            return view('web.student_talents.add_rec_access');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+
+
 
 
 

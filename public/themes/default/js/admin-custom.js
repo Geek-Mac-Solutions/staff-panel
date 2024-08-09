@@ -21,6 +21,11 @@ $(document).ready( function () {
     $('#addItems').DataTable();
     $('#studentDetailsTable').DataTable();
     $('#inactiveStudents').DataTable();
+    $('#scholarshopDetails').DataTable();
+    $('#scholarshopAdd').DataTable();
+    $('#recAccess').DataTable();
+    $('#addRecAccess').DataTable();
+    $('#analysingTbl').DataTable();
 
 });
 
