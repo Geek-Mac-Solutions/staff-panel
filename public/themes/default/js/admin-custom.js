@@ -26,7 +26,10 @@ $(document).ready( function () {
     $('#recAccess').DataTable();
     $('#addRecAccess').DataTable();
     $('#analysingTbl').DataTable();
-
+    $('#pendingCertificateTbl').DataTable();
+    $('#approvedCertificateTbl').DataTable();
+    $('#subjectwiseVideoTbl').DataTable();
+    $('#otherTalenteVideoTbl').DataTable();
 });
 
 
@@ -166,9 +169,6 @@ $('#sendOtpBtn').on('click', function() {
 $(document).on('click', '.remove-btn', function() {
     $(this).closest('.row').remove();
 });
-
-
-
 
 
 

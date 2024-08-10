@@ -44,4 +44,33 @@
 
       
    </body>
+   <script>
+    
+    // Set maximum height for cards to align them
+    function setMaxHeight(cardClass) {
+        let maxHeight = 0;
+        let cards = document.querySelectorAll(cardClass);
+
+        // Find the tallest card
+        cards.forEach((card) => {
+            let height = card.clientHeight;
+            if (height > maxHeight) {
+                maxHeight = height;
+            }
+        });
+
+        // Set all cards to the height of the tallest card
+        cards.forEach((card) => {
+            card.style.height = maxHeight + "px";
+        });
+    }
+
+    // Run setMaxHeight function after DOM has loaded
+    document.addEventListener("DOMContentLoaded", () => {
+       
+        setMaxHeight(".card-1");
+    });
+
+
+   </script>
 </html>

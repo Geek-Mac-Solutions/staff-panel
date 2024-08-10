@@ -112,11 +112,97 @@ class StudentTalentController extends Controller
 
 
 
+    public function allCertificate()
+    {
+        try{
+
+            return view('web.student-certificate.all_certificate');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+    public function pendingCertificate()
+    {
+        try{
+
+            return view('web.student-certificate.pending_certificate');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+    
+    public function approvedCertificate()
+    {
+        try{
+
+            return view('web.student-certificate.approved_certificate');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+    
+    public function allApprovedCertificate()
+    {
+        try{
+
+            return view('web.student-certificate.all_approved_certificate');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+    public function subjectwiseVideos()
+    {
+        try{
+
+            return view('web.student-certificate.subjectwise_videos');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+    
+    
+
+
+    public function otherTalent()
+    {
+        try{
+
+            return view('web.student-certificate.other_talent');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+    
+
+    public function allOtherTalent()
+    {
+        try{
+
+            return view('web.student-certificate.all_other_talent');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+    
 
 
 
 
 
 
-
+    
 }

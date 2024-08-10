@@ -55,6 +55,22 @@
       </div>
 
       <div class="col-lg-3 col-sm-4  col-10  px-3  mb-3 mx-auto">
+        <a href="{{ route('web.certificate.all_certificate') }}" class="hvr-shrink w-100">
+           <div class="row align-items-center gradient-background-1 py-3 justify-content-around rounded-35 w-100">
+              <div class="col-1  py-1">
+                 <i class="fa fa-certificate fs-3 text-white  "></i>
+              </div>
+              <div class="col-10 py-1 ps-4">
+                 <p class="font-13 text-white fw-500">  STUDENT
+                    VIDEOS / CERTIFICATES
+                    
+               </p>
+              </div>
+           </div>
+        </a>
+     </div>
+
+      <div class="col-lg-3 col-sm-4  col-10  px-3  mb-3 mx-auto">
          <a href="{{ route('web.student.talents') }}" class="hvr-shrink w-100">
             <div class="row align-items-center gradient-background-1 py-3 justify-content-around rounded-35 w-100">
                <div class="col-1  py-1">

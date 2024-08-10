@@ -27,8 +27,8 @@
             <table id="studentDetailsTable" class="table table-striped table-hover table-bordered">
                <thead class="text-white gradient-background text-uppercase fw-light font-14">
                   <tr>
-                     <th>CREATED DATE</th>
-                     <th>STUDENT ID</th>
+                     <th>  DATE</th>
+                     <th>  ID</th>
                      <th>NAME</th>
                   
                      <th>Gender</th>
@@ -60,22 +60,47 @@
                   <tr   >
                     <td> </td>
                     <td> GNI 00001</td>
-                    <td>LITHULI VIRUDINI <a   
+              
+                    <td>LITHULI VIRUDINI <br> <a   
                         class="  text-white  bg-success font-12 py-2 px-5 justify-content-around rounded-35"
                            >
                            Activated
                         </a>
-                        <br>
-                        <a href=" " 
+                        {{-- --}}
+                        {{-- <a href=" " 
                         class="hvr-shrink text-white  bg-primary font-12 py-2 px-2 justify-content-around rounded-35"
                            >
                            View
                            Analysis
-                        </a>
+                        </a> --}}
                     </td>
                     <td> </td>
                    
-                     <td><img class="d-block w-50 mx-auto rounded-circle" src="/themes/default/img/place-holder.png" alt="Guru Niwasa LMS"></td>
+                    <td>
+                        <img class="d-block w-50 mx-auto rounded-circle" src="{{asset('themes/default/img/place-holder.png')}}"
+                           alt="Guru Niwasa LMS">
+                        <button class="btn btn-info fw-500 font-11 px-2 w-100 rounded-pill text-white mt-2"
+                           data-bs-toggle="modal" data-bs-target="#viewPhoto">
+                        View</button>
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="viewPhoto"
+                           tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                           <div class="modal-dialog modal-dialog-centered ">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body ">
+                                    <div class="row">
+                                       <div class="col-lg-12 text-center mx-auto">
+                                          <img class="d-block w-50 mx-auto rounded-circle" src="{{asset('themes/default/img/place-holder.png')}}"
+                                             alt="Guru Niwasa LMS">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </td>
                     
                     
                     
@@ -86,15 +111,67 @@
                      <td> </td>
                      <td> </td>
                      <td> </td>
-                     <td> </td>
-                     <td> </td>
-                     <td> </td>
-                     <td> 
-                        <a href=" " 
-                        class="hvr-shrink text-white  bg-primary font-12 py-2 px-5 justify-content-around rounded-35"
-                           >
-                        View
+                      
+
+                     <td>
+                        <a href="{{ route('web.fees.payment_history') }}" class=" text-white
+                           font-12 text-white rounded-pill py-2 px-4 bg-primary fw-500
+                           align-items-center   hvr-shrink">View
                         </a>
+                     </td>
+                     <td>NORMAL </td>
+                    
+                     <td>
+                        <button class="btn btn-danger fw-500 font-11 px-2 w-100 rounded-pill text-white"
+                           data-bs-toggle="modal" data-bs-target="#deleteSt">
+                           DELETE</button>
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="deleteSt"
+                           tabindex="-1" aria-labelledby="deleteSt" aria-hidden="true" >
+                           <div class="modal-dialog modal-dialog-centered ">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body ">
+                                    <div class="row">
+                                       <div class="col-12">
+                                          <p class=" fw-500 font-14 rounded-3 text-dark pb-3">
+                                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                          </p>
+                                          <button type="button" class="btn  font-14 text-white gradient-background-1 py-2 px-5  ">
+                                          Submit</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <button class="btn btn-warning fw-500 font-11 px-2 w-100 rounded-pill text-white"
+                           data-bs-toggle="modal" data-bs-target="#editStd">
+                        EDIT</button>
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="editStd"
+                           tabindex="-1" aria-labelledby="editStd" aria-hidden="true" >
+                           <div class="modal-dialog modal-dialog-centered ">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body ">
+                                    <div class="row">
+                                       <div class="col-12">
+                                          <p class=" fw-500 font-14 rounded-3 text-dark pb-3">
+                                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                          </p>
+                                          <button type="button" class="btn  font-14 text-white gradient-background-1 py-2 px-5  ">
+                                          Submit</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </td>
                   </tr>
                </tbody>

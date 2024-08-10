@@ -175,14 +175,19 @@ Route::get('/rec-access', [StudentTalentController::class, 'recAccess'])->name('
 Route::get('/add-rec-access', [StudentTalentController::class, 'AddRecAccess'])->name('web.rec.add_rec');
 
 
+// ADD CERTIFICATES AND TALENT VIDEOS
 
 
+Route::get('/all_certificate', [StudentTalentController::class, 'allCertificate'])->name('web.certificate.all_certificate');
 
-
-
-
-
-
+Route::get('/pending_certificate', [StudentTalentController::class, 'pendingCertificate'])->name('web.certificate.pending_certificate');
+Route::get('/approved_certificate', [StudentTalentController::class, 'approvedCertificate'])->name('web.certificate.approved_certificate');
+Route::get('/all_approved_certificate',
+ [StudentTalentController::class, 'allApprovedCertificate'])->name('web.certificate.all_approved_certificate');
+ Route::get('/subjectwise_videos', [StudentTalentController::class, 'subjectwiseVideos'])->name('web.certificate.subjectwise_videos');
+ Route::get('/other_talent', [StudentTalentController::class, 'otherTalent'])->name('web.certificate.other_talent');
+ Route::get('/all_other_talent',
+  [StudentTalentController::class, 'allOtherTalent'])->name('web.certificate.all_other_talent');
 
 
 
