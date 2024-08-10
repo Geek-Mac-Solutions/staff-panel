@@ -68,7 +68,8 @@
                     <td>
                        <form class="row g-3">
                         <div class="col-lg-10 col-sm-9">
-                             <input type="text" class="form-control font-13 fw-500 text-dark "   value="https://www.youtube.com/watch?v=Nsg_7GpaTLY&list=RDMM&index=15">
+                             <input type="text" class="form-control font-13 fw-500 text-dark "  
+                              value="https://www.youtube.com/watch?v=Nsg_7GpaTLY&list=RDMM&index=15">
                           </div>
                           <div class="col-lg-2 col-sm-3">
                              <button type="submit" class="btn btn-warning

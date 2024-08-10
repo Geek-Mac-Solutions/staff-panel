@@ -92,7 +92,7 @@
                                  <div class="modal-body ">
                                     <div class="row">
                                        <div class="col-12">
-                                        <img class="d-block w-100 " src="/themes/default/img/6.webp" alt="Guru Niwasa LMS">
+                                        <img class="d-block w-100 " src="{{asset('themes/default/img/6.webp')}}" alt="Guru Niwasa LMS">
 
                                        </div>
                                     </div>
