@@ -4,7 +4,7 @@ use App\Http\Controllers\Web\Home\HomeController;
 use App\Http\Controllers\Web\OtherTransactionController;
 use App\Http\Controllers\Web\FeesController;
 use App\Http\Controllers\Web\SalaryController;
-
+use App\Http\Controllers\Web\TeacherController;
 
 use App\Http\Controllers\Web\ClassController;
 use App\Http\Controllers\Web\VideoController;
@@ -188,6 +188,30 @@ Route::get('/all_approved_certificate',
  Route::get('/other_talent', [StudentTalentController::class, 'otherTalent'])->name('web.certificate.other_talent');
  Route::get('/all_other_talent',
   [StudentTalentController::class, 'allOtherTalent'])->name('web.certificate.all_other_talent');
+
+
+
+
+
+// Teachers paper
+Route::get('/teachers-section', [TeacherController::class, 'teachersSection'])->name('web.teachers.section');
+Route::get('/class-issues', [TeacherController::class, 'classIssues'])->name('web.teachers.class_issues');
+Route::get('/class-issues-view', [TeacherController::class, 'classIssuesView'])->name('web.teachers.class_issues_view');
+Route::get('/video-issues', [TeacherController::class, 'videoIssues'])->name('web.teachers.video_issues');
+Route::get('/video-view', [TeacherController::class, 'videoIssuesView'])->name('web.teachers.video_issues_view');
+Route::get('/teacher-reviews', [TeacherController::class, 'teacherReviews'])->name('web.teachers.teacher_views');
+Route::get('/class-video-report', [TeacherController::class, 'classAndVideoReport'])->name('web.teachers.class_video_report');
+Route::get('/class-video-analysing', [TeacherController::class, 'classAndVideoAnalysing'])->name('web.teachers.class_video_analysing');
+Route::get('/class-video-summery', [TeacherController::class, 'classAndVideoSummery'])->name('web.teachers.class_video_summery');
+Route::get('/video-time-tables', [TeacherController::class, 'videoTimeTables'])->name('web.teachers.video_time_tables');
+Route::get('/gradewise-time-tables', [TeacherController::class, 'gradewiseTimeTables'])->name('web.teachers.gradewise_time_tables');
+
+
+
+
+
+
+
 
 
 

@@ -610,6 +610,15 @@ a:hover,
     cursor: pointer;
 }
 
+.custom-badge {
+    top: -15px;
+    right: -15px;
+}
+
+.custom-icon {
+    padding: 10px;
+}
+
   @keyframes rotate-circle {
     0% {
       transform: rotate(-45deg);

@@ -30,6 +30,12 @@ $(document).ready( function () {
     $('#approvedCertificateTbl').DataTable();
     $('#subjectwiseVideoTbl').DataTable();
     $('#otherTalenteVideoTbl').DataTable();
+    $('#classIssues').DataTable();
+    $('#videoRecIssues').DataTable();
+    $('#teacherReview').DataTable();
+    $('#classVideoAnalysing').DataTable();
+    $('#classVideosSummery').DataTable();
+    $('#videoTimeTbl').DataTable();
 });
 
 
