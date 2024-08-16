@@ -205,12 +205,17 @@ Route::get('/class-video-analysing', [TeacherController::class, 'classAndVideoAn
 Route::get('/class-video-summery', [TeacherController::class, 'classAndVideoSummery'])->name('web.teachers.class_video_summery');
 Route::get('/video-time-tables', [TeacherController::class, 'videoTimeTables'])->name('web.teachers.video_time_tables');
 Route::get('/gradewise-time-tables', [TeacherController::class, 'gradewiseTimeTables'])->name('web.teachers.gradewise_time_tables');
+Route::get('/teacher-payment', [TeacherController::class, 'teacherPayment'])->name('web.teachers.teacher_payment');
+Route::get('/teacher-payment-view', [TeacherController::class, 'teacherPaymentView'])->name('web.teachers.teacher_payment_view');
+Route::get('/payment-analysing', [TeacherController::class, 'paymentAnalysing'])->name('web.teachers.payment_analysing');
+Route::get('/payment-analysing-graph', [TeacherController::class, 'paymentAnalysingGraph'])->name('web.teachers.payment_analysing_graph');
+Route::get('/our-teacher', [TeacherController::class, 'ourTeacher'])->name('web.teachers.our_teacher');
 
+Route::get('/schedule-class', [TeacherController::class, 'scheduleClass'])->name('web.teachers.schedule_class');
+Route::get('/schedule-class-view', [TeacherController::class, 'scheduleClassView'])->name('web.teachers.schedule_class_view');
 
-
-
-
-
+Route::get('/add-grade', [TeacherController::class, 'addGrade'])->name('web.teachers.add_grade');
+Route::get('/add-subject', [TeacherController::class, 'addSubject'])->name('web.teachers.add_subject');
 
 
 

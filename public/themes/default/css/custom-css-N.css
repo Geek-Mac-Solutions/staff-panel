@@ -618,6 +618,12 @@ a:hover,
 .custom-icon {
     padding: 10px;
 }
+.progress-bar-positive {
+    background-color: #007bff; /* Blue */
+}
+.progress-bar-negative {
+    background-color: #dc3545; /* Red */
+}
 
   @keyframes rotate-circle {
     0% {
@@ -696,6 +702,9 @@ a:hover,
 }
 
 @media only screen and (max-width: 767px) {
+    .w-50-mobile{
+        width:50% !important;
+    }
     .font-24 {
         font-size: 20px;
     }

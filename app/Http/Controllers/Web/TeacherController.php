@@ -151,8 +151,118 @@ class TeacherController extends Controller
             return;
         }
     }
+    public function teacherPayment()
+    {
+        try{
 
-    
+            return view('web.teachers.teacher_payment');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+    public function teacherPaymentView()
+    {
+        try{
+
+            return view('web.teachers.teacher_payment_view');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+    public function paymentAnalysing()
+    {
+        try{
+
+            return view('web.teachers.payment_analysing');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+    public function paymentAnalysingGraph()
+    {
+        try{
+
+            return view('web.teachers.payment_analysing_graph');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+    public function ourTeacher()
+    {
+        try{
+
+            return view('web.teachers.our_teacher');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+    public function scheduleClass()
+    {
+        try{
+
+            return view('web.teachers.schedule_class');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+    public function scheduleClassView()
+    {
+        try{
+
+            return view('web.teachers.schedule_class_view');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+
+    public function addGrade()
+    {
+        try{
+
+            return view('web.teachers.add_grade');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
+
+
+    public function addSubject()
+    {
+        try{
+
+            return view('web.teachers.add_subject');
+
+        }catch(\Exception $exception){
+
+            return;
+        }
+    }
+
 
 
 }

@@ -66,21 +66,15 @@
                </div>
             </a>
          </div>
-
-
          <div class="col-lg-3 col-sm-3 mb-3 align-items-center text-center">
-            <a href="{{ route('web.teachers.video_time_tables') }}" class="hvr-shrink w-100  ">
+            <a href="{{ route('web.teachers.video_time_tables') }}" class="hvr-shrink w-100">
                <div class="alert alert-info align-items-center card-1 position-relative custom-alert" role="alert">
                   <p class="font-16 text-uppercase fw-bold text-dark py-3 mb-0">TEACHER INTRO VIDEO/ TIME
-                    TABLES
-
+                     TABLES
                   </p>
                </div>
             </a>
          </div>
-
-
-
          <div class="col-lg-3 col-sm-3 mb-3 align-items-center text-center">
             <a href="{{ route('web.teachers.gradewise_time_tables') }}" class="hvr-shrink w-100  ">
                <div class="alert alert-info align-items-center card-1 position-relative custom-alert" role="alert">
@@ -92,11 +86,50 @@
 
 
 
+         <div class="col-lg-3 col-sm-3 mb-3 align-items-center text-center">
+            <a href="{{ route('web.teachers.teacher_payment') }}" class="hvr-shrink w-100  ">
+               <div class="alert alert-info align-items-center card-1 position-relative custom-alert" role="alert">
+                  <p class="font-16 text-uppercase fw-bold text-dark py-3 mb-0">TEACHER PAYMENT
+                  </p>
+               </div>
+            </a>
+         </div>
+
+
+   <div class="col-lg-3 col-sm-3 mb-3 align-items-center text-center">
+            <a href="{{ route('web.teachers.our_teacher') }}" class="hvr-shrink w-100  ">
+               <div class="alert alert-info align-items-center card-1 position-relative custom-alert" role="alert">
+                  <p class="font-16 text-uppercase fw-bold text-dark py-3 mb-0">OUR TEACHERS
+                  </p>
+               </div>
+            </a>
+         </div>
 
 
 
+         <div class="col-lg-3 col-sm-3 mb-3 align-items-center text-center">
+            <a href="{{ route('web.teachers.add_grade') }}" class="hvr-shrink w-100  ">
+               <div class="alert alert-info align-items-center card-1 position-relative custom-alert" role="alert">
+                  <p class="font-16 text-uppercase fw-bold text-dark py-3 mb-0">ADD GRADES & SUBJECTS
+
+                  </p>
+               </div>
+            </a>
+         </div>
+
+         <div class="col-lg-3 col-sm-3 mb-3 align-items-center text-center">
+            <a href="{{ route('web.teachers.schedule_class') }}" class="hvr-shrink w-100  ">
+               <div class="alert alert-info align-items-center card-1 position-relative custom-alert" role="alert">
+                  <p class="font-16 text-uppercase fw-bold text-dark py-3 mb-0">ADD CLASS Schedule
+
+                  </p>
+               </div>
+            </a>
+         </div>
 
 
+
+         
 
 
 
