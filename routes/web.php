@@ -101,15 +101,6 @@ Route::get('/forgot_password', [AuthController::class, 'forgotPassword'])->name(
 
 
 
-
-
-
-
-
-
-
-
-
 // PaymentHistory
 Route::get('/payment-history-month', [PaymentHistoryController::class, 'paymentHistoryMonth'])->name('web.payment.month');
 Route::get('/payment-history-list', [PaymentHistoryController::class, 'paymentHistoryList'])->name('web.payment.list');
@@ -216,61 +207,3 @@ Route::get('/schedule-class-view', [TeacherController::class, 'scheduleClassView
 
 Route::get('/add-grade', [TeacherController::class, 'addGrade'])->name('web.teachers.add_grade');
 Route::get('/add-subject', [TeacherController::class, 'addSubject'])->name('web.teachers.add_subject');
-
-
-
-
-
-
-// Class Tutes And Books
-Route::get('/tutes-books', [TutesAndBookController::class, 'tutesBook'])->name('web.tutes.book');
-Route::get('/tutes-books-view', [TutesAndBookController::class, 'tutesBookMonthly'])->name('web.tutes.view');
-Route::get('/tutes-view', [TutesAndBookController::class, 'tutesView'])->name('web.tutes.open');
-
-
-
-// TIME TABLES
-Route::get('/time-table', [TimeTableController::class, 'timeTable'])->name('web.time.table');
-
-
-
-// Class paper
-Route::get('/class-paper', [ClassPaperController::class, 'classPaper'])->name('web.class.paper');
-Route::get('/class-paper-view', [ClassPaperController::class, 'classPaperMonthly'])->name('web.paper.view');
-Route::get('/class-paper-open', [ClassPaperController::class, 'classPaperView'])->name('web.paper.open');
-
-
-
-
-
-
-// Online exam
-Route::get('/online-exam', [OnlineExamController::class, 'onlineExam'])->name('web.online.exam');
-Route::get('/online-exam-view', [OnlineExamController::class, 'onlineExamMonthly'])->name('web.online.view');
-
-
-
-// Learning Management
-Route::get('/learning-management', [LearningManagementController::class, 'learningManagement'])->name('web.learning.management');
-Route::get('/time-management', [LearningManagementController::class, 'timeManagement'])->name('web.time.management');
-Route::get('/time-management/list-table', [LearningManagementController::class, 'timeManagementTable'])->name('web.time-mgt.list-table');
-Route::get('/time-management/list-report', [LearningManagementController::class, 'timeManagementReport'])->name('web.time-mgt.list-report');
-Route::get('/time-management/revising-plane', [LearningManagementController::class, 'revisingPlane'])->name('web.revising.plane');
-
-
-
-
-
-
-
-
-// Analysis Report
-Route::get('/analysis-report', [AnalysisReportController::class, 'analysisReport'])->name('web.analysis.report');
-
-
-// Teacher Subject
-Route::get('/teacher-subject', [TeacherSubjectController::class, 'teacherSubject'])->name('web.teacher.subject');
-Route::get('/request-subject',[TeacherSubjectController::class, 'requestSubject'])->name('web.teacher.request-subject');
-
-
-
