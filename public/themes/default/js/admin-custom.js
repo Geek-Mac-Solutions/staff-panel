@@ -30,6 +30,19 @@ $(document).ready( function () {
     $('#approvedCertificateTbl').DataTable();
     $('#subjectwiseVideoTbl').DataTable();
     $('#otherTalenteVideoTbl').DataTable();
+    $('#classIssues').DataTable();
+    $('#videoRecIssues').DataTable();
+    $('#teacherReview').DataTable();
+    $('#classVideoAnalysing').DataTable();
+    $('#classVideosSummery').DataTable();
+    $('#videoTimeTbl').DataTable();
+    $('#teacherPayment').DataTable();
+    $('#paymentAnalysingTbl').DataTable();
+    $('#ourTeacherTbl').DataTable();
+    $('#ourTeacherTbl').DataTable();
+    $('#scheduleClass').DataTable();
+    $('#gradeTimeTbl').DataTable();
+    $('#addSubjectTbl').DataTable();
 });
 
 
@@ -59,6 +72,27 @@ new Chart(ctx, {
 
 
 
+const ctx1 = document.getElementById('paymentGraph');
+
+new Chart(ctx1, {
+  type: 'bar',
+  data: {
+    labels: ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'], // Month names as labels
+    datasets: [{
+      label: 'Amount', // You can rename this label as needed
+      data: [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000], // Corresponding data for each month
+      borderWidth: 1
+    }]
+  },
+  options: {
+    indexAxis: 'y', // Horizontal bar chart
+    scales: {
+      x: {
+        beginAtZero: true
+      }
+    }
+  }
+});
 
 
 
